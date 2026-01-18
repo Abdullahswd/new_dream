@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الحلم الجديد | شركة برمجيات احترافية</title>
+    <meta name="description"
+        content="شركة الحلم الجديد للبرمجيات - حلول تقنية مبتكرة ومنصة متاجر لينك للتجارة الإلكترونية">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0A192F',
+                        secondary: '#64FFDA',
+                        'text-light': '#CCD6F6',
+                        'text-dark': '#8892B0',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-primary overflow-x-hidden bg-mesh">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 glass-nav py-4 transition-all duration-300">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-secondary flex items-center gap-2">
+                <i class="fas fa-cloud-bolt text-3xl"></i>
+                <span class="tracking-wider">الحلم الجديد</span>
+            </a>
+
+            <div class="hidden md:flex items-center gap-10">
+                <a href="#hero" class="nav-link text-text-light font-medium">الرئيسية</a>
+                <a href="#about" class="nav-link text-text-light font-medium">عن الشركة</a>
+                <a href="#services" class="nav-link text-text-light font-medium">خدماتنا</a>
+                <a href="#matajer" class="nav-link text-text-light font-medium">متاجر لينك</a>
+                <a href="#contact" class="btn-primary">ابدأ مشروعك</a>
+            </div>
+
+            <button id="menu-btn" class="md:hidden text-secondary text-2xl focus:outline-none">
+                <i class="fas fa-bars-staggered"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-primary w-full absolute top-full left-0 border-b border-secondary/20 py-8 px-6 shadow-2xl">
+            <div class="flex flex-col gap-6 text-center">
+                <a href="#hero" class="text-text-light hover:text-secondary text-lg">الرئيسية</a>
+                <a href="#about" class="text-text-light hover:text-secondary text-lg">عن الشركة</a>
+                <a href="#services" class="text-text-light hover:text-secondary text-lg">خدماتنا</a>
+                <a href="#matajer" class="text-text-light hover:text-secondary text-lg">متاجر لينك</a>
+                <a href="#contact" class="btn-primary mt-4">اتصل بنا</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="h-screen flex items-center justify-center relative overflow-hidden">
+        <!-- Abstract Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="hero.png" alt="Background" class="w-full h-full object-cover">
+            <!-- Layers of Overlays for Depth -->
+            <div class="absolute inset-0 bg-primary/60 backdrop-blur-[2px]"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-primary/80 via-transparent to-primary"></div>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <div class="max-w-5xl mx-auto" data-aos="zoom-out" data-aos-duration="1500">
+                <div class="inline-block px-4 py-1 border border-secondary/30 rounded-full bg-secondary/5 mb-8">
+                    <span class="text-secondary font-mono text-sm tracking-[0.3em] uppercase">نحن مهندسو المستقبل
+                        الرقمي</span>
+                </div>
+
+                <h1 class="text-6xl md:text-9xl font-black text-text-light leading-[1.1] mb-8">
+                    نصنع <span class="text-gradient">أحلامك</span> <br>بأبعاد برمجية
+                </h1>
+
+                <p class="text-text-dark text-xl md:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed opacity-90">
+                    في <span class="text-text-light font-bold">"الحلم الجديد"</span>، ندمج بين الإبداع الفني والتميز
+                    التقني لنبني حلولاً برمجية تتجاوز التوقعات وتدفع بأعمالكم نحو الصدارة العالمية.
+                </p>
+
+                <div class="flex flex-wrap justify-center gap-6 md:gap-10">
+                    <a href="#contact"
+                        class="group relative px-12 py-5 bg-secondary text-primary font-black text-xl rounded-full overflow-hidden transition-all hover:scale-105 active:scale-95 shadow-[0_0_50px_rgba(100,255,218,0.2)]">
+                        <span class="relative z-10">ابدأ مشروعك الحلم</span>
+                        <div
+                            class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        </div>
+                    </a>
+
+                    <a href="#matajer" class="flex items-center gap-4 text-text-light text-xl font-bold group">
+                        <span
+                            class="border-b-2 border-transparent group-hover:border-secondary transition-all py-1">اكتشف
+                            منصة متاجر لينك</span>
+                        <div
+                            class="w-12 h-12 rounded-full border border-secondary/20 flex items-center justify-center group-hover:bg-secondary group-hover:text-primary transition-all">
+                            <i class="fas fa-arrow-left group-hover:-translate-x-1 transition-transform"></i>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Trusted By / Stats Row -->
+                <div
+                    class="mt-20 pt-10 border-t border-white/5 flex flex-wrap justify-center gap-12 items-center opacity-60">
+                    <div class="flex items-center gap-3">
+                        <i class="fas fa-award text-secondary"></i>
+                        <span class="text-text-light text-sm font-bold uppercase tracking-widest">Global
+                            Standards</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fas fa-shield-halved text-secondary"></i>
+                        <span class="text-text-light text-sm font-bold uppercase tracking-widest">Enterprise
+                            Security</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fas fa-bolt text-secondary"></i>
+                        <span class="text-text-light text-sm font-bold uppercase tracking-widest">High
+                            Performance</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Animated Scroll Bottom -->
+        <a href="#about"
+            class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 group cursor-pointer z-20">
+            <span
+                class="text-text-dark text-[10px] uppercase tracking-[0.4em] group-hover:text-secondary transition-colors">اكتشف
+                المزيد</span>
+            <div
+                class="w-6 h-10 border-2 border-text-dark/30 rounded-full flex justify-center p-1 group-hover:border-secondary/50 transition-colors">
+                <div class="w-1 h-2 bg-secondary rounded-full animate-bounce"></div>
+            </div>
+        </a>
+    </header>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-primary/50 relative z-10 border-y border-secondary/5">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center p-6 stats-card rounded-2xl" data-aos="fade-up">
+                    <div class="text-secondary text-4xl font-black mb-2"><span class="stat-number"
+                            data-target="15">0</span>+</div>
+                    <div class="text-text-dark font-medium">سنوات خبرة</div>
+                </div>
+                <div class="text-center p-6 stats-card rounded-2xl" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-secondary text-4xl font-black mb-2"><span class="stat-number"
+                            data-target="24">0</span>/7</div>
+                    <div class="text-text-dark font-medium">دعم فني</div>
+                </div>
+                <div class="text-center p-6 stats-card rounded-2xl" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-secondary text-4xl font-black mb-2"><span class="stat-number"
+                            data-target="99">0</span>%</div>
+                    <div class="text-text-dark font-medium">رضا العملاء</div>
+                </div>
+                <div class="text-center p-6 stats-card rounded-2xl" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-secondary text-4xl font-black mb-2"><span class="stat-number"
+                            data-target="120">0</span>+</div>
+                    <div class="text-text-dark font-medium">خبير تقني</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-32 relative overflow-hidden">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-20 items-center">
+            <div class="order-2 md:order-1" data-aos="fade-right">
+                <img src="about.png" alt="Our Office"
+                    class="rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-700">
+            </div>
+            <div class="order-1 md:order-2" data-aos="fade-left">
+                <h2 class="text-secondary font-mono mb-4 text-lg">من نحن؟</h2>
+                <h3 class="text-4xl font-bold text-text-light mb-8 leading-tight">بيت الخبرة التقني الأول في المنطقة
+                </h3>
+                <p class="text-text-dark text-lg mb-8 leading-relaxed">
+                    شركة "الحلم الجديد" ليست مجرد مزود خدمات تقنية، بل هي شريك نجاح لأكثر من عقد من الزمان. نحن نؤمن بأن
+                    البرمجيات هي العمود الفقري لأي عمل تجاري عصري، ولذلك نكرس طاقاتنا لتقديم جودة عالمية بأيدي محلية
+                    خبيرة.
+                </p>
+                <div class="space-y-4">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-secondary/10 p-2 rounded text-secondary mt-1"><i class="fas fa-microchip"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-text-light font-bold mb-1">تقنيات متقدمة</h4>
+                            <p class="text-text-dark text-sm">نستخدم أحدث لغات البرمجة وأطر العمل العالمية.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-32 bg-primary/20">
+        <div class="container mx-auto px-6 text-center max-w-4xl mb-20">
+            <span class="text-secondary font-mono tracking-widest uppercase mb-4 block">ماذا نقدم؟</span>
+            <h2 class="text-5xl font-bold text-text-light mb-8">حلول شاملة لانطلاقة رقمية كبرى</h2>
+            <div class="w-24 h-1.5 bg-secondary mx-auto"></div>
+        </div>
+
+        <div class="container mx-auto px-6 grid md:grid-cols-3 gap-10">
+            <!-- Service Cards -->
+            <div class="p-10 border border-secondary/5 bg-primary/40 rounded-3xl card-hover relative overflow-hidden group"
+                data-aos="fade-up">
+                <div
+                    class="absolute -right-4 -top-4 text-9xl text-secondary/5 group-hover:text-secondary/10 transition-colors">
+                    01</div>
+                <div class="text-secondary text-5xl mb-8"><i class="fas fa-layer-group"></i></div>
+                <h3 class="text-2xl font-bold text-text-light mb-4">تطوير المنصات الضخمة</h3>
+                <p class="text-text-dark leading-relaxed">بناء أنظمة برمجية معقدة وقابلة للتوسع (Enterprise Solutions)
+                    بكفاءة عالية وأمان فائق.</p>
+            </div>
+            <div class="p-10 border border-secondary/5 bg-primary/40 rounded-3xl card-hover relative overflow-hidden group"
+                data-aos="fade-up" data-aos-delay="150">
+                <div
+                    class="absolute -right-4 -top-4 text-9xl text-secondary/5 group-hover:text-secondary/10 transition-colors">
+                    02</div>
+                <div class="text-secondary text-5xl mb-8"><i class="fas fa-wand-magic-sparkles"></i></div>
+                <h3 class="text-2xl font-bold text-text-light mb-4">تجربة وواجهة المستخدم</h3>
+                <p class="text-text-dark leading-relaxed">تصميم واجهات (UI/UX) سحرية تجعل رحلة العميل ممتعة، سهلة،
+                    ومحفزة على اتخاذ القرار.</p>
+            </div>
+            <div class="p-10 border border-secondary/5 bg-primary/40 rounded-3xl card-hover relative overflow-hidden group"
+                data-aos="fade-up" data-aos-delay="300">
+                <div
+                    class="absolute -right-4 -top-4 text-9xl text-secondary/5 group-hover:text-secondary/10 transition-colors">
+                    03</div>
+                <div class="text-secondary text-5xl mb-8"><i class="fas fa-brain"></i></div>
+                <h3 class="text-2xl font-bold text-text-light mb-4">ذكاء الأعمال والبيانات</h3>
+                <p class="text-text-dark leading-relaxed">تحويل بياناتكم إلى رؤى ذكية تساعدكم في اتخاذ القرارات الصحيحة
+                    ومضاعفة أرباحكم.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Matajer Link Feature -->
+    <section id="matajer" class="py-32">
+        <div
+            class="container mx-auto px-6 bg-secondary/5 rounded-[40px] p-10 md:p-24 border border-secondary/10 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-secondary/10 blur-[120px]"></div>
+            <div class="grid lg:grid-cols-2 gap-20 items-center relative z-10">
+                <div data-aos="fade-right">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="h-px w-10 bg-secondary"></span>
+                        <span class="text-secondary font-bold tracking-widest uppercase text-sm">منتجنا الحصري</span>
+                    </div>
+                    <img src="https://img.icons8.com/clouds/100/shopping-cart.png" alt="icon" class="mb-6">
+                    <h2 class="text-5xl md:text-6xl font-black text-text-light mb-8">منصة <span
+                            class="text-secondary italic">متاجر لينك</span></h2>
+                    <p class="text-text-dark text-xl mb-10 leading-relaxed">
+                        نحن الشركة الأم والمالك الحصري لمنصة <span class="text-secondary font-bold">متاجر لينك</span>.
+                        قمنا بتطوير هذا المنتج ليحل كافة عقبات التجارة الإلكترونية، من إدارة المخزون إلى عمليات الدفع
+                        والشحن، كل ذلك في واجهة واحدة مبهرة.
+                    </p>
+                    <div class="grid grid-cols-2 gap-8 mb-12">
+                        <div class="p-6 bg-primary/30 rounded-2xl border border-secondary/5">
+                            <i class="fas fa-rocket text-secondary text-2xl mb-4"></i>
+                            <h4 class="text-text-light font-bold">سرعة الإطلاق</h4>
+                            <p class="text-text-dark text-sm">متجرك جاهز في 5 دقائق.</p>
+                        </div>
+                        <div class="p-6 bg-primary/30 rounded-2xl border border-secondary/5">
+                            <i class="fas fa-shield-check text-secondary text-2xl mb-4"></i>
+                            <h4 class="text-text-light font-bold">أمان عالي</h4>
+                            <p class="text-text-dark text-sm">حماية بياناتك أولويتنا.</p>
+                        </div>
+                    </div>
+                    <a href="#"
+                        class="bg-secondary text-primary px-12 py-5 rounded-full font-black text-lg hover:scale-105 transition-transform shadow-xl shadow-secondary/10">زيارة
+                        موقع المنصة</a>
+                </div>
+                <div class="relative group" data-aos="zoom-in-left">
+                    <div
+                        class="absolute inset-0 bg-secondary/20 blur-[100px] group-hover:bg-secondary/30 transition-all rounded-full">
+                    </div>
+                    <img src="matajer.png" alt="Platform Mockup"
+                        class="rounded-3xl shadow-3xl relative z-10 border border-secondary/10 transform -rotate-3 group-hover:rotate-0 transition-transform duration-700">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-32 bg-primary/10">
+        <div class="container mx-auto px-6 text-center mb-20">
+            <h2 class="text-4xl font-bold text-text-light">قالوا عنّا</h2>
+            <p class="text-text-dark mt-4">نعتز بثقتكم ونفخر بنجاحاتكم في السوق اليمني</p>
+        </div>
+        <div class="container mx-auto px-6 grid md:grid-cols-3 gap-8 text-right">
+            <div class="p-8 rounded-2xl testimonial-card shadow-lg" data-aos="fade-up">
+                <i class="fas fa-quote-left text-secondary text-3xl mb-6 opacity-30"></i>
+                <p class="text-text-light italic mb-8 leading-relaxed">"فريق الحلم الجديد حول فكرتنا إلى واقع يفوق
+                    التوقعات. منصة متاجر لينك كانت النقلة النوعية لتجارتنا في صنعاء."</p>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-secondary/20 rounded-full flex items-center justify-center text-secondary">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-text-light font-bold">محمد الحيمي</h4>
+                        <span class="text-text-dark text-xs">مدير مبيعات - مؤسسة البرق</span>
+                    </div>
+                </div>
+            </div>
+            <div class="p-8 rounded-2xl testimonial-card shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-quote-left text-secondary text-3xl mb-6 opacity-30"></i>
+                <p class="text-text-light italic mb-8 leading-relaxed">"احترافية عالية في التعامل ودقة في المواعيد.
+                    فخورون بالتعاون مع كادر يمني بهذا المستوى من الإبداع البرمجي."</p>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-secondary/20 rounded-full flex items-center justify-center text-secondary">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-text-light font-bold">أروى الصبري</h4>
+                        <span class="text-text-dark text-xs">المؤسس التنفيذي - تكنو لاين</span>
+                    </div>
+                </div>
+            </div>
+            <div class="p-8 rounded-2xl testimonial-card shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-quote-left text-secondary text-3xl mb-6 opacity-30"></i>
+                <p class="text-text-light italic mb-8 leading-relaxed">"بنينا نظامنا المالي بالكامل مع الحلم الجديد،
+                    والنتائج كانت مذهلة من حيث السرعة والأمان. شكراً لهذا الفريق المبدع."</p>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-secondary/20 rounded-full flex items-center justify-center text-secondary">
+                        <i class="fas fa-user-gear"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-text-light font-bold">صالح السنيدار</h4>
+                        <span class="text-text-dark text-xs">مدير تقنية المعلومات</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-32 relative">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="bg-secondary/5 rounded-3xl border border-secondary/10 overflow-hidden grid md:grid-cols-5">
+                <div class="md:col-span-2 bg-secondary p-12 text-primary flex flex-col justify-between">
+                    <div>
+                        <h2 class="text-4xl font-black mb-6 leading-tight">جاهز لبناء مستقبلك؟</h2>
+                        <p class="font-medium text-lg leading-relaxed opacity-90">اترك لنا التفاصيل وسنتواصل معك خلال 24
+                            ساعة لتقديم استشارة فنية مجانية.</p>
+                    </div>
+
+                    <div class="space-y-8 mt-12">
+                        <div class="flex items-center gap-6">
+                            <i class="fas fa-location-dot text-2xl"></i>
+                            <div>
+                                <h4 class="font-black underline decoration-primary/20">المقر الرئيسي</h4>
+                                <p class="text-sm font-bold">صنعاء، الجمهورية اليمنية</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-6">
+                            <i class="fas fa-headset text-2xl"></i>
+                            <div>
+                                <h4 class="font-black underline decoration-primary/20">اتصل بنا</h4>
+                                <p class="text-sm font-bold" dir="ltr">+967 775113262</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:col-span-3 p-12">
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label class="text-text-light text-sm font-bold pr-1">الاسم الكامل</label>
+                                <input type="text"
+                                    class="w-full bg-primary/50 border border-secondary/10 px-4 py-4 rounded-xl text-text-light focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary/20 transition-all placeholder:text-text-dark/30"
+                                    placeholder="محمد السالم" required>
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-text-light text-sm font-bold pr-1">البريد الإلكتروني</label>
+                                <input type="email"
+                                    class="w-full bg-primary/50 border border-secondary/10 px-4 py-4 rounded-xl text-text-light focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary/20 transition-all placeholder:text-text-dark/30"
+                                    placeholder="name@company.com" required>
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-text-light text-sm font-bold pr-1">نوع المشروع</label>
+                            <select
+                                class="w-full bg-primary/50 border border-secondary/10 px-4 py-4 rounded-xl text-text-light focus:outline-none focus:border-secondary appearance-none cursor-pointer">
+                                <option>تطبيق جوال</option>
+                                <option>موقع إلكتروني</option>
+                                <option>منصة تجارة إلكترونية</option>
+                                <option>نظام داخلي</option>
+                                <option>أخرى</option>
+                            </select>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-text-light text-sm font-bold pr-1">شرح موجز</label>
+                            <textarea rows="4"
+                                class="w-full bg-primary/50 border border-secondary/10 px-4 py-4 rounded-xl text-text-light focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary/20 transition-all placeholder:text-text-dark/30"
+                                placeholder="أخبرنا باختصار عن فكرتك..." required></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-secondary text-primary font-black py-5 rounded-xl hover:shadow-2xl hover:shadow-secondary/20 hover:-translate-y-1 transition-all uppercase tracking-widest">إرسال
+                            الطلب الآن</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-20 bg-primary border-t border-secondary/5 relative z-10 overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 md:col-span-2">
+                    <a href="#" class="text-3xl font-bold text-secondary flex items-center gap-3 mb-8">
+                        <i class="fas fa-cloud-bolt"></i>
+                        <span>الحلم الجديد</span>
+                    </a>
+                    <p class="text-text-dark max-w-sm text-lg leading-relaxed">بوابتك الرقمية نحو الريادة والاحترافية.
+                        نحن هنا لنجعل من حلمك واقعاً برمجياً ملموساً بأعلى المعايير العالمية.</p>
+                </div>
+                <div>
+                    <h4 class="text-text-light font-bold mb-6 text-xl">روابط سريعة</h4>
+                    <ul class="space-y-4 text-text-dark">
+                        <li><a href="#about"
+                                class="hover:text-secondary transition-colors underline-offset-4 hover:underline">عن
+                                الشركة</a></li>
+                        <li><a href="#services"
+                                class="hover:text-secondary transition-colors underline-offset-4 hover:underline">خدماتنا</a>
+                        </li>
+                        <li><a href="#matajer"
+                                class="hover:text-secondary transition-colors underline-offset-4 hover:underline">متاجر
+                                لينك</a></li>
+                        <li><a href="#contact"
+                                class="hover:text-secondary transition-colors underline-offset-4 hover:underline">تواصل
+                                معنا</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-text-light font-bold mb-6 text-xl">اتصل بنا</h4>
+                    <div class="flex gap-6 text-3xl text-text-dark">
+                        <a href="#" class="hover:text-secondary hover:-translate-y-1 transition-all"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-secondary hover:-translate-y-1 transition-all"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="hover:text-secondary hover:-translate-y-1 transition-all"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-secondary hover:-translate-y-1 transition-all"><i
+                                class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="pt-12 border-t border-secondary/5 flex flex-col md:flex-row justify-between items-center gap-6 text-text-dark/50 text-sm">
+                <p>&copy; 2026 الحلم الجديد للبرمجيات. جميع الحقوق محفوظة.</p>
+                <div class="flex gap-8">
+                    <a href="#" class="hover:text-secondary transition-colors">سياسة الخصوصية</a>
+                    <a href="#" class="hover:text-secondary transition-colors">اتفاقية الشروط</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+            once: true,
+            easing: 'ease-out-cubic'
+        });
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+:root {
+    --primary: #0A192F;
+    --secondary: #64FFDA;
+    --text-light: #CCD6F6;
+    --text-dark: #8892B0;
+    --glass: rgba(10, 25, 47, 0.7);
+}
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    background-color: var(--primary);
+    color: var(--text-light);
+    scroll-behavior: smooth;
+}
+
+.glass-nav {
+    background: var(--glass);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(100, 255, 218, 0.1);
+}
+
+.hero-gradient {
+    background: radial-gradient(circle at center, rgba(100, 255, 218, 0.1) 0%, transparent 70%);
+}
+
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-10px);
+    border-color: var(--secondary);
+    box-shadow: 0 10px 30px -15px rgba(100, 255, 218, 0.2);
+}
+
+.btn-primary {
+    background: transparent;
+    border: 1px solid var(--secondary);
+    color: var(--secondary);
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: rgba(100, 255, 218, 0.1);
+}
+
+.nav-link {
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--secondary);
+}
+
+[dir="rtl"] .ml-auto {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+[dir="rtl"] .mr-auto {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+/* Premium Animations */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+.text-gradient {
+    background: linear-gradient(to right, #64FFDA, #48D1BD);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bg-mesh {
+    background-image:
+        radial-gradient(at 0% 0%, rgba(100, 255, 218, 0.05) 0, transparent 50%),
+        radial-gradient(at 50% 0%, rgba(10, 25, 47, 0.1) 0, transparent 50%),
+        radial-gradient(at 100% 0%, rgba(100, 255, 218, 0.05) 0, transparent 50%);
+}
+
+.stats-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(100, 255, 218, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.testimonial-card {
+    border-right: 4px solid var(--secondary);
+    background: rgba(100, 255, 218, 0.02);
+}
